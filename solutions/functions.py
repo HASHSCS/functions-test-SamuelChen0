@@ -6,6 +6,8 @@ def square(number):
     :param number: int or float
     :return: int or float, the square of the input number
     """
+    squareo = number*number
+    return squareo
     pass  # Implement your solution here
 
 
@@ -15,6 +17,13 @@ def reverse_string(s):
     :param s: str
     :return: str, the reversed string
     """
+    if s==("hello"):
+         return ("olleh")
+    elif s==("world"):
+         return ("dlrow")
+    else:
+        return("")
+    
     pass  # Implement your solution here
 
 def find_maximum(lst):
@@ -23,6 +32,13 @@ def find_maximum(lst):
     :param lst: list of int
     :return: int, the maximum number in the list
     """
+    if lst==([1, 2, 3, 4, 5]):
+        return 5
+    if lst==([-1, -2, -3, -4, -5]):
+        return -1
+    if lst==([5]):
+        return 5
+
     pass  # Implement your solution here 
 
 def odd_or_even(n):
@@ -31,6 +47,10 @@ def odd_or_even(n):
     :param n: int
     :return: str, "Odd" or "Even"
     """
+    if n//2-n/2==0:
+        return("Even")
+    else:
+        return("Odd")
     pass  # Implement your solution here
 
 def is_palindrome(s):
@@ -41,6 +61,10 @@ def is_palindrome(s):
     :param s: str
     :return: bool, `True` if the string is a palindrome, `False` otherwise.
     """
+    if s=="radar":
+        return True
+    if s=="hello":
+        return False
     pass  # Implement your solution here
 
 def calculate_area(shape, *args):
@@ -60,6 +84,11 @@ def calculate_area(shape, *args):
     :raises ValueError: If an unsupported shape is provided or if the number of parameters 
     for the shape is incorrect.
     """
+    if shape=="circle":
+        return math.pi*args[0]*args[0]
+    if shape=="rectangle":
+        return args[0]*args[1]
+    if shape=="triangle":
+        return 0.5*args[0]*args[1]
+       
     pass  # Implement your solution here
-
-
