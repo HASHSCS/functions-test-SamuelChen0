@@ -67,7 +67,7 @@ def is_palindrome(s):
         return False
     pass  # Implement your solution here
 
-def calculate_area(shape, a, b):
+def calculate_area(shape, *args):
     """
     This function calculates and returns the area of the specified shape based on the provided arguments.
     The type of shape and its corresponding parameters are passed as arguments.
@@ -85,10 +85,10 @@ def calculate_area(shape, a, b):
     for the shape is incorrect.
     """
     if shape=="circle":
-        return math.pi*a*a
+        return math.pi*args[0]*args[0]
     if shape=="rectangle":
-        return a*b
+        return args[0]*args[1]
     if shape=="triangle":
-        return 0.5*a*b
+        return 0.5*args[0]*args[1]
        
     pass  # Implement your solution here
